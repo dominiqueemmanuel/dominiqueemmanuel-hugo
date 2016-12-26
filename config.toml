@@ -1,0 +1,320 @@
+# Site settings
+baseurl = "https://dominiqueemmanuel.github.io/"
+languageCode = "en-us"
+title = "Dominique EMMANUEL (Freelance)"
+theme = "hugo-agency-theme"
+canonifyURLs = true
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Dominique EMMANUEL ()x"
+  description = "Data Scientist / Statisticien (Freelance)"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "Dominique EMMANUEL (Freelance)"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    services = "Secteurs"
+    portfolio = "Études types"
+    clients_list = "Clients"
+    team = "Qui suis-je"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+      url = "http://gohugo.io"
+      name = "External link"
+      weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Data Science - Analyses Statistiques - Data Visualisation"
+    subtitle = "Pour révéler la valeur de vos données"
+    buttonText = "En savoir plus"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Secteurs"
+    #subtitle = "sd"
+
+    [[params.services.row]]
+
+
+    [[params.services.row.list]]
+      icon = "fa-shopping-cart"
+      title = "Grande Distribution"
+      description = "Segmentations clients ou produits, géomarketing, rayonnage optimal, moteur de recommandations, prévisions de vente, etc..."
+      #url = "#"
+
+    [[params.services.row.list]]
+     icon = "fa-comments-o"
+      title = "Instituts d'Études"
+      description = "Données d'enquêtes, données aspirées de réseaux sociaux. Du plan de dépouillements aux modèles explicatifs en passant par du textmining."
+      #url = "#"
+
+	  [[params.services.row.list]]
+      icon = "fa-shopping-bag"
+      title = "Luxe, Parfum, Cosmétique"
+      description = "Des données de tests consommateurs (enquêtes quanti, use test, questions ouvertes, ...) aux données d'achats (tickets de caisse) en passant par l'analyse sensorielle."
+      #url = "#/test.html"
+
+	  
+	 [[params.services.row.list]]
+     icon = "fa-mobile"
+      title = "Téléphonie Mobile"
+      description = "Score d'octroi, prévisions d'appel entrants, textmining."
+      #url = "#"
+	  
+	  [[params.services.row.list]]
+     icon = "fa-credit-card"
+      title = "Banque de Détail"
+      description = "Score d'octroi, géomarketing bancaire."
+      #url = "#"
+	  
+	  [[params.services.row.list]]
+     icon = "fa-question-circle "
+      title = "Votre Secteur"
+      description = "Concevons ensemble méthodes et outils pour exploiter vos données."
+      #url = "#"
+	  
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Études types"
+    subtitle = "Quelques exemples de réalisations"
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "Qui suis-je ?"
+    #subtitle = "Dominique EMMANUEL<br/>Data Scientist / Statisticien (Freelance)"
+    description = "Vous pouvez me joindre au 06 33 31 58 45 ou bien par email sur **dominique_emmanuel@hotmail.com** ou encore dans la section [Contact](#contact)."
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+     [[params.team.members]]
+      img = "dom.jpg"
+      name = "Dominique EMMANUEL"
+      position = "Data Scientist / Statisticien (Freelance)"
+      livesIn = "[Paris, France](https://goo.gl/maps/hQ12zw3MYNL2)"
+
+      # For bio markdown and even multiline strings are available.
+      bio = """De formation ingénieur en statistiques (ENSAI promo 2004), j'interviens en tant que freelance depuis 2009 auprès de différents acteurs dans le domaine du marketing.<br>Je travaille en dialogue avec mes clients, en tâchant d'être le plus à l'écoute de leurs besoins d'une part et de produire des propositions d'analyses classiques ou personnalisées les plus adaptées d'autres part.<br>Mes livrables sont des notes méthodologiques, des rapports de synthèses, de la data visualisation (interactive), du code (commenté) et des applications clef en main.<br>Enfin j'affectionne particulièrement de travailler avec des outils open source, en particulier [R](https://cran.r-project.org/)."""
+	  
+	  
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/dominiqueemmanuel"],
+		["fa-github","https://github.com/dominiqueemmanuel"],
+		["fa-twitter", "https://twitter.com/dom_emm"]
+      ]
+
+
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      title = "Quelques-un des mes clients"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+	   [[params.clients]]
+        logo = "givaudan.png"
+        
+      [[params.clients]]
+        logo = "kantar_tns.jpg"
+        #link = "#"
+
+       [[params.clients]]
+        logo = "sg.jpg"
+        #link = "#"
+	  
+
+      [[params.clients]]
+        logo = "geoconcept.jpg"
+        #link = "#"
+
+		[[params.clients]]
+        logo = "credoc.jpg"
+        #link = "#"
+		
+		
+	    [[params.clients]]
+        logo = "sephora.jpg"
+        #link = "#"
+		
+				
+	    [[params.clients]]
+        logo = "carrefour.jpg"
+        #link = "#"
+		
+		
+					
+	    [[params.clients]]
+        logo = "emnos.jpg"
+		
+		
+	   [[params.clients]]
+        logo = "lm.png"
+        #link = "#"
+		
+		   [[params.clients]]
+        logo = "stokomani.jpg"
+        #link = "#"
+		
+	[[params.clients]]
+        logo = "la.png"
+        #link = "#"
+		
+				
+	[[params.clients]]
+        logo = "advancy.png"
+        #link = "#"
+		
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact"
+    subtitle  = "Vous pouvez me joindre au 06 33 31 58 45 ou bien par email sur **dominique_emmanuel@hotmail.com** ou via le formulaire ci-dessous."
+    buttonText = "Envoyer un message"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "dominique_emmanuel@hotmail.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Votre nom *"
+      warning = "Entrez votre nom SVP."
+
+    [params.contact.form.email]
+      text = "Votre email *"
+      warning = "Entrez votre email SVP."
+
+    [params.contact.form.phone]
+      text = "Votre numéro de téléphone *"
+      warning = "Entrez votre numéro de téléphone SVP."
+
+    [params.contact.form.message]
+      text = "Votre message *"
+      warning = "Entrez votre message SVP."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Vous pouvez me joindre au 06 33 31 58 45 ou bien par email sur **dominique_emmanuel@hotmail.com** ou encore dans la section [Contact](#contact)."
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "https://www.linkedin.com/in/dominiqueemmanuel"
+
+    [[params.footer.social]]
+      icon = "fa-github"
+      link = "https://github.com/dominiqueemmanuel"
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "https://twitter.com/dom_emm"
+
+
+ #   [[params.footer]]
+  #    text = "Mis à jour le 1er janvier 2017"
+   #   #link = "#"
